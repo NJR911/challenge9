@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    font-family: 'Barlow Semi Condensed';
+}
+
+body{
+    background-color: hsl(0, 0%, 81%);
+    
+}
+
+.container{
+    display: grid;
+    grid-auto-rows: minmax(150px,auto);
+    grid-template-areas: 
+    "tleft tleft tcenter tright"
+    "bleft bcenter bcenter tright"
+    ;
+    grid-gap: 20px;
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.box{
+    border-radius: 10px;
+}
+
+.tleft{
+    grid-area: tleft;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+}
+.tcenter{
+    grid-area: tcenter;
+    background-color: hsl(217, 19%, 35%);
+}
+.tright{
+    grid-area: tright;
+    background-color: hsl(0, 0%, 100%);
+}
+.bleft{
+    grid-area: bleft;
+    background-color: hsl(0, 0%, 100%);
+}
+.bcenter{
+    grid-area: bcenter;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.m3rt{
+    margin: 25px;
+}
+
+.head{
+    display: flex;
+}
+
+.img1{
+    content: url("images/image-daniel.jpg");
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+.img2{
+    content: url("images/image-jonathan.jpg");
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+.img3{
+    content: url("images/image-kira.jpg");
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+.img4{
+    content: url("images/image-jeanette.jpg");
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+.img5{
+    content: url("images/image-patrick.jpg");
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+
+
+.h1{
+    font-size: 13px;
+    margin: 4px 0 0 10px;
+    color: hsl(210, 46%, 95%);
+    font-weight: 600;
+}
+.s1{
+    opacity: 50%;
+    font-size: 12px;
+}
+
+.p1{
+    color: hsl(210, 46%, 95%);
+    font-weight: 600;
+    font-size: 18px;
+}
+.p2{
+    color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    opacity: 70%;
+}
+
+
+.h1n{
+    color: hsl(217, 19%, 35%);
+}
+.p1n{
+    color: hsl(217, 19%, 35%);
+}
+.p2n{
+    color: hsl(217, 19%, 35%);
+}
+
+.foot{
+    text-align: center;
+    font-size: 13px;
+}
+a:hover{
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+    grid-template-areas: 
+    "tleft"
+    "tcenter"
+    "tright"
+    "bleft"
+    "bcenter"
+    ;
+    max-width: 300px;
+    margin: auto;
+    }
+}
