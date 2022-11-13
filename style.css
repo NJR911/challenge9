@@ -6,7 +6,6 @@
 
 body{
     background-color: hsl(0, 0%, 81%);
-    
 }
 
 .container{
@@ -32,22 +31,56 @@ body{
     background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position-x: 85%;
+    animation: tleft 500ms ease-out;
 }
+
+@keyframes tleft {
+    0%{
+        transform: translateY(100%);
+        opacity: 50%;
+        scale: 50%;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 .tcenter{
     grid-area: tcenter;
     background-color: hsl(217, 19%, 35%);
+    animation: tleft 500ms ease-out;
 }
 .tright{
     grid-area: tright;
     background-color: hsl(0, 0%, 100%);
+    animation: tright 500ms ease-out;
 }
+
+@keyframes tright {
+    0%{
+        transform: translateX(100%);
+        opacity: 70%;
+    }
+}
+
 .bleft{
     grid-area: bleft;
     background-color: hsl(0, 0%, 100%);
+    animation: bleft 500ms ease-out;
 }
+
+@keyframes bleft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 50%;
+        scale: 80%;
+    }
+}
+
 .bcenter{
     grid-area: bcenter;
     background-color: hsl(219, 29%, 14%);
+    animation: tleft 500ms ease-out;
 }
 
 .m3rt{
@@ -131,7 +164,18 @@ body{
 .foot{
     text-align: center;
     font-size: 13px;
+    animation: foot ease-out 550ms;
 }
+@keyframes foot {
+    0%{
+        opacity: 0;
+        scale: 0;
+    }
+    100%{
+
+    }
+}
+
 a:hover{
     color: red;
 }
@@ -148,4 +192,28 @@ a:hover{
     max-width: 300px;
     margin: auto;
     }
+
+    @keyframes tright {
+        0%{
+            transform: translateY(100%);
+            opacity: 50%;
+            scale: 50%;
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes bleft {
+        0%{
+            transform: translateY(100%);
+            opacity: 50%;
+            scale: 50%;
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+    
 }
